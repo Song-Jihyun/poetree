@@ -1,0 +1,42 @@
+/* basic tags */
+body {
+    margin: 0;
+}
+header {
+    background-color: blanchedalmond;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    height: 70px;
+}
+
+/* class tags */
+.nav-wrapper {
+    margin: 7px;
+}
+
+.nav-logo {
+
+}
+.nav-logo img {
+    width: 130px;
+    height: 50px;
+    
+}
+
+.nav-taps {
+
+}
+.nav-taps a {
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.nav-buttons {
+    align-content: center;
+}
+.nav-buttons button {
+    
+}
