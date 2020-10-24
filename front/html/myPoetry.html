@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UFT-8">
-        <title>Poetree</title>
+        <title>Poetree - myPoetry</title>
         <script src="https://kit.fontawesome.com/5c7cf6e14b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="../css/style.css">
     </head>
@@ -10,12 +10,13 @@
         <header>
             <nav>
                 <div class="nav-wrapper nav-taps">
-                    <a href="Poetree.html" class="nav-logo">
+                    <a href="main.html" class="nav-logo">
                         <img src="../img/logo.png" alt="Move to Poetree's main page">
                     </a>
-                    <a href="Write.html">시 쓰기</a>
-                    <a href="ReadOthers.html">시 읽기</a>
-                    <a href="ReadMine.html">내가 쓴 시</a>
+                    <button type="button" class="fas fa-bars fa-lg" id="sidebar_toggle" onclick="sidebar_open()"></button>
+                    <a href="write.html">시 쓰기</a>
+                    <a href="read.html">시 읽기</a>
+                    <a href="myPoetry.html">내가 쓴 시</a>
                 </div>
                 <div class = "nav-wrapper nav-search">
                     <form action="POST">
@@ -29,5 +30,13 @@
                 </div>
             </nav>
         </header>
+        <section>
+            <aside class="slide-left-to-right">
+                <a href="write.html">시 쓰기</a>
+                <a href="read.html">시 읽기</a>
+                <a href="myPoetry.html">내가 쓴 시</a>
+            </aside>
+        </section>
+    <script type="text/javascript" src="../javascript/sidebar.js"></script>
     </body>
 </html>
