@@ -24,7 +24,7 @@
     display: none;
     position: absolute;
     padding: 15px 40px;
-    top: calc(65px + 46px);
+    top: 46px;
     right: 46px;
     border-width: 1px;
     border-color: #999999;

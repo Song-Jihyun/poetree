@@ -39,25 +39,29 @@
         <section>
             <div class="write">
                 <form action="" method="post">
-                    <div class="write-menu">
-                        <button type="submit">
-                            <i class="fas fa-pen"></i>
-                        </button>
-                    </div>
-                    <div class="write-subject">
-                        주제 : <input type="text" name="subject" placeholder="나무">
-                    </div>
-                    <div>
-                        <div>
-                            <input type="text" name="title" placeholder="제목">
+                    <div class="write-header">
+                        <div class="header-menu">
+                            <button type="submit" class="submit">
+                                <i class="fas fa-pen"></i>
+                            </button>
                         </div>
-                        <div>
-                            <input type="textarea" name="poetry" placeholder="내용">
+                        <div class="header-subject">
+                            <span>주제 : </span><input type="text" name="subject" placeholder="한 단어로 작성해주세요. ex) 나무" autocomplete="off" onkeypress="subject_enter()">
                         </div>
                     </div>
+                    <div class="write-content">
+                        <div class="content-title">
+                            <input type="text" name="title" placeholder="제목" autocomplete="off" onkeypress="title_enter()">
+                        </div>
+                        <div class="content-poetry">
+                            <textarea name="poetry" placeholder="내용" autocomplete="off" onkeydown="resize_textarea(this)" onkeyup="resize_textarea(this)"></textarea>
+                        </div>
+                    </div>
+                    <div class="write-footer"></div>
                 </form>
             </div>
         </section>
     <script type="text/javascript" src="../javascript/sidebar.js"></script>
+    <script type="text/javascript" src="../javascript/write.js"></script>
     </body>
 </html>
