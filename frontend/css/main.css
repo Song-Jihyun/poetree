@@ -1,0 +1,33 @@
+/* section */
+/* explain */
+.explain {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 95px;
+}
+.explain-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 31px;
+    width: 31px;
+    border-radius: 31px;
+    background-color: #f1cbd2;
+    margin-right: 32px;
+    z-index: 1;
+}
+.explain-icon i {
+    opacity: 0.6;
+}
+.explain-text {
+    display: none;
+    position: absolute;
+    padding: 15px 40px;
+    top: calc(65px + 46px);
+    right: 46px;
+    border-width: 1px;
+    border-color: #999999;
+    border-radius: 10px;
+    color: #515151;
+}

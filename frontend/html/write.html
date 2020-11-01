@@ -5,6 +5,7 @@
         <title>Poetree - write</title>
         <script src="https://kit.fontawesome.com/5c7cf6e14b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/write.css">
     </head>
     <body>
         <header>
@@ -30,12 +31,32 @@
                 </div>
             </nav>
         </header>
+        <aside class="slide-left-to-right">
+            <a href="write.html">시 쓰기</a>
+            <a href="read.html">시 읽기</a>
+            <a href="myPoetry.html">내가 쓴 시</a>
+        </aside>
         <section>
-            <aside class="slide-left-to-right">
-                <a href="write.html">시 쓰기</a>
-                <a href="read.html">시 읽기</a>
-                <a href="myPoetry.html">내가 쓴 시</a>
-            </aside>
+            <div class="write">
+                <form action="" method="post">
+                    <div class="write-menu">
+                        <button type="submit">
+                            <i class="fas fa-pen"></i>
+                        </button>
+                    </div>
+                    <div class="write-subject">
+                        주제 : <input type="text" name="subject" placeholder="나무">
+                    </div>
+                    <div>
+                        <div>
+                            <input type="text" name="title" placeholder="제목">
+                        </div>
+                        <div>
+                            <input type="textarea" name="poetry" placeholder="내용">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
     <script type="text/javascript" src="../javascript/sidebar.js"></script>
     </body>

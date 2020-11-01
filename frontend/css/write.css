@@ -1,0 +1,32 @@
+/* nav */
+.nav-search {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* section */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* write */
+.write {
+    width: 624px;
+    height: calc(100% - 100vh*0.2);
+    border-width: 1px;
+    border-color: #999999;
+    border-radius: 20px;
+    color: #515151;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.16);
+    overflow: auto;
+}
+
+
+
+@media screen and (max-width: 780px){
+    .write {
+        width: calc(100% - 100vw*0.2);
+    }
+}
