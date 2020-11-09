@@ -12,6 +12,17 @@ function title_enter() {
     }
 }
 
-function resize_textarea(textarea) {
-    textarea.style.height = (20 + textarea.scrollHeight)+"px";
+var textarea = document.getElementsByTagName("textarea")[0];
+function resize_textarea() {
+    var str = textarea.value;
+    var cols = textarea.cols;
+
+    var linecount = 0;
+    for(var l in str.split("\n")) {
+        linecount += Math.ceil( l.length / cols ); // Take into account long lines
+    }
+    textarea.style.height = (linecount+1)*19 + "px";
 }
+
+window.addEventListener("keydown", (e) => resize_textarea());
+resize_textarea();

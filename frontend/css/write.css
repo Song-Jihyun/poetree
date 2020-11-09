@@ -79,6 +79,9 @@ section {
     text-align: center;
     width: 100%;
 }
+.content-poetry textarea:focus {
+    outline: 0px;
+}
 
 .write-footer {
     border-top-width: 1px;
