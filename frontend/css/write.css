@@ -88,12 +88,12 @@ section {
     border-color: #999999;
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 780px){ /* 스크린이 폭이 좁아지면 스크린 크기에 따라 write 폭 비율 조정 */
     .write {
         width: calc(100% - 100vw*0.2);
     }
 }
-@media screen and (max-height: 230px){
+@media screen and (max-height: 230px){ /* 스크린 높이가 작아지면 write 사라짐 (추후에 화면 크기를 키워달라는 안내문구를 대신 띄울 예정)*/
     .write {
         display: none;
     }

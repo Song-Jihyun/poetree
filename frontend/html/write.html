@@ -31,14 +31,17 @@
                 </div>
             </nav>
         </header>
+
         <aside class="slide-left-to-right">
             <a href="write.html">시 쓰기</a>
             <a href="read.html">시 읽기</a>
             <a href="myPoetry.html">내가 쓴 시</a>
         </aside>
+        
         <section>
             <div class="write">
                 <form action="" method="post">
+                    <!-- write header은 scrollbar 안생김-->
                     <div class="write-header">
                         <div class="header-menu">
                             <button type="submit" class="submit">
@@ -49,11 +52,13 @@
                             <span>주제 : </span><input type="text" name="subject" placeholder="한 단어로 작성해주세요. ex) 나무" autocomplete="off" onkeypress="subject_enter()">
                         </div>
                     </div>
+                    <!-- write content는 scrollbar 생김 -->
                     <div class="write-content">
                         <div class="content-title">
                             <input type="text" name="title" placeholder="제목" autocomplete="off" onkeypress="title_enter()">
                         </div>
                         <div class="content-poetry">
+                            <!-- 키보드로 입력할때마다 textarea size 업데이트됨 -->
                             <textarea name="poetry" placeholder="내용" autocomplete="off" onkeydown="resize_textarea(this)" onkeyup="resize_textarea(this)"></textarea>
                         </div>
                     </div>

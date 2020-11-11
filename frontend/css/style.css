@@ -179,7 +179,7 @@ aside a:hover {
 }
 
 /* animation */
-.slide-left-to-right {
+.slide-left-to-right { /* aside가 나타날 때 animation 효과 */
     position: relative;
     animation: animateleft 0.4s
 } @keyframes animateleft {
@@ -192,7 +192,7 @@ aside a:hover {
     }
 }
 
-@media screen and (min-width: 985px){
+@media screen and (min-width: 985px){ /* 화면 크기가 작아지면 nav-tap의 하이퍼링크들을 없애고 aside를 부를 수 있는 버튼을 추가 */
     .nav-taps button {
         display: none;
     }
